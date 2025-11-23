@@ -1469,3 +1469,173 @@ body {
   .blog-card .card-title { --fs-4: 2.4rem; }
 
 }
+/*-----------------------------------*\
+  #CONTACT FORM
+\*-----------------------------------*/
+
+.contact-form {
+  display: grid;
+  gap: 30px;
+}
+
+.contact-form .input-wrapper {
+  display: grid;
+  gap: 30px;
+}
+
+.contact-form .email-field {
+  margin-block-end: 0;
+  width: 100%;
+}
+
+.message-field {
+  height: 200px; /* Force height */
+  min-height: 200px;
+  padding-block: 20px;
+  resize: vertical;
+}
+
+@media (min-width: 575px) {
+  .contact-form .input-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/*-----------------------------------*\
+  #MODAL
+\*-----------------------------------*/
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background-color: hsla(0, 0%, 0%, 0.7);
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition-2);
+}
+
+.modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  background-color: var(--majorelle-blue);
+  max-width: 600px;
+  width: 100%;
+  padding: 40px;
+  border-radius: var(--radius-20);
+  position: relative;
+  transform: translateY(20px);
+  transition: var(--transition-2);
+}
+
+.modal.active .modal-content {
+  transform: translateY(0);
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 30px;
+  color: var(--white);
+  transition: var(--transition-1);
+}
+
+.modal-close-btn:is(:hover, :focus) {
+  color: var(--mustard);
+  transform: rotate(90deg);
+}
+
+/*-----------------------------------*\
+  #MODAL ENHANCEMENTS
+\*-----------------------------------*/
+
+.contact-modal-content,
+.terms-modal-content {
+  max-width: 900px;
+  padding: 0;
+  display: grid;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .contact-modal-content,
+  .terms-modal-content {
+    grid-template-columns: 0.8fr 1.2fr;
+  }
+}
+
+
+
+.modal-left {
+  background-color: var(--blue-ryb); /* Slightly different shade */
+  padding: 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  display: none; /* Hide on mobile by default */
+}
+
+@media (min-width: 768px) {
+  .modal-left {
+    display: flex;
+  }
+}
+
+.modal-right {
+  padding: 40px;
+}
+
+/* Shapes */
+.shape {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.1;
+  background-color: var(--white);
+}
+
+.shape-1 {
+  width: 200px;
+  height: 200px;
+  top: -50px;
+  left: -50px;
+}
+
+.shape-2 {
+  width: 150px;
+  height: 150px;
+  bottom: -30px;
+  right: -30px;
+}
+
+.modal-left-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Terms Modal */
+.terms-modal-content {
+  max-width: 600px;
+}
+
+/* Scrollbar for Terms */
+.terms-content::-webkit-scrollbar {
+  width: 5px;
+}
+
+.terms-content::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.terms-content::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}

@@ -5,12 +5,52 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pixology - Building Digital Product</title>
+  <title>KJR Labs - Innovating Digital Solutions</title>
 
   <!-- 
-    - favicon
+    - SEO Meta Tags
   -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <meta name="description" content="KJR Labs is a premier software development agency specializing in innovative digital solutions, web design, and scalable tech for modern businesses. Transform your digital future with us.">
+  <meta name="keywords" content="KJR Labs, Software Development, Web Design, App Development, Digital Transformation, Tech Solutions, AI Integration, Business Growth, Startup Tech">
+  <meta name="author" content="KJR Labs">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kjrlabs.com/">
+  <meta property="og:title" content="KJR Labs - Innovating Digital Solutions">
+  <meta property="og:description" content="KJR Labs is a premier software development agency specializing in innovative digital solutions, web design, and scalable tech for modern businesses.">
+  <meta property="og:site_name" content="KJR Labs">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://kjrlabs.com/">
+  <meta property="twitter:title" content="KJR Labs - Innovating Digital Solutions">
+  <meta property="twitter:description" content="KJR Labs is a premier software development agency specializing in innovative digital solutions, web design, and scalable tech for modern businesses.">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "KJR Labs",
+    "url": "https://kjrlabs.com",
+    "description": "KJR Labs is a premier software development agency specializing in innovative digital solutions, web design, and scalable tech for modern businesses.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "IN"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "email": "kjrlabs9@gmail.com"
+    },
+    "sameAs": [
+      "https://twitter.com/kjrlabs",
+      "https://linkedin.com/company/kjrlabs"
+    ]
+  }
+  </script>
 
   <!-- 
     - custom css link
@@ -40,12 +80,12 @@
   <header class="header" data-header>
     <div class="container">
 
-      <a href="#" class="logo">Pixology</a>
+      <a href="#top" class="logo">KJR Labs</a>
 
       <nav class="navbar" data-navbar>
 
         <div class="wrapper">
-          <a href="#" class="logo">Pixology</a>
+          <a href="#top" class="logo">KJR Labs</a>
 
           <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
             <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
@@ -66,13 +106,7 @@
             <a href="#feature" class="navbar-link" data-nav-link>Features</a>
           </li>
 
-          <li class="navbar-item">
-            <a href="#project" class="navbar-link" data-nav-link>Portfolio</a>
-          </li>
 
-          <li class="navbar-item">
-            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
-          </li>
 
         </ul>
 
@@ -82,7 +116,7 @@
         <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
       </button>
 
-      <a href="#" class="btn btn-primary has-before has-after">Let’s Talk 👋</a>
+      <button class="btn btn-primary has-before has-after" data-modal-trigger="contact-modal">Let’s Talk 👋</button>
 
       <div class="overlay" data-nav-toggler data-overlay></div>
 
@@ -106,26 +140,25 @@
           <div class="hero-content">
 
             <h1 class="h1 hero-title">
-              Building Digital <span class="has-before">Product</span>, Brand and Experience
+              Innovating Your <span class="has-before">Digital</span> Future & Experience
             </h1>
 
             <p class="hero-text">
-              At Pixology we specialize in designing, building, shipping and scaling beautiful, usable products with
-              blazing-fast
-              efficiency
+              At KJR Labs, we specialize in designing, building, and scaling high-performance software solutions for
+              modern businesses.
             </p>
 
             <div class="wrapper">
-              <a href="#" class="btn btn-primary has-before has-after">How It Works</a>
+              <!-- <a href="#" class="btn btn-primary has-before has-after">How It Works</a> -->
 
-              <button class="hero-btn" aria-label="pixology promo">
+              <!-- <button class="hero-btn" aria-label="kjr labs promo">
                 <ion-icon name="play-outline" aria-hidden="true"></ion-icon>
 
                 <span class="span">Behind the scenes</span>
-              </button>
+              </button> -->
             </div>
 
-            <ul class="social-list">
+            <!-- <ul class="social-list">
 
               <li>
                 <a href="#" class="social-link" style="--color: hsl(241, 77%, 63%);">
@@ -151,7 +184,7 @@
                 </a>
               </li>
 
-            </ul>
+            </ul> -->
 
           </div>
 
@@ -175,7 +208,7 @@
 
           <p class="section-subtitle has-before text-center">Our Services</p>
 
-          <h2 class="h2 section-title text-center">Managing you business with our <span class="has-before">best
+          <h2 class="h2 section-title text-center">Managing your business with our <span class="has-before">best
               service</span></h2>
 
           <ul class="grid-list">
@@ -189,7 +222,7 @@
                 </div>
 
                 <h3 class="h3">
-                  <a href="#" class="card-title">Product Management</a>
+                  <a href="javascript:void(0)" class="card-title">Product Management</a>
                 </h3>
 
               </div>
@@ -204,7 +237,7 @@
                 </div>
 
                 <h3 class="h3">
-                  <a href="#" class="card-title">Web & Mobile Development</a>
+                  <a href="javascript:void(0)" class="card-title">Web & Mobile Development</a>
                 </h3>
 
               </div>
@@ -219,26 +252,13 @@
                 </div>
 
                 <h3 class="h3">
-                  <a href="#" class="card-title">Fast Customer Support</a>
+                  <a href="javascript:void(0)" class="card-title">Fast Customer Support</a>
                 </h3>
 
               </div>
             </li>
 
-            <li>
-              <div class="service-card" style="--color: 343, 98%, 60%">
 
-                <div class="card-icon">
-                  <img src="./assets/images/service-icon-4.png" width="30" height="30" loading="lazy"
-                    alt="service icon">
-                </div>
-
-                <h3 class="h3">
-                  <a href="#" class="card-title">Human Resources</a>
-                </h3>
-
-              </div>
-            </li>
 
             <li>
               <div class="service-card" style="--color: 210, 100%, 53%">
@@ -249,49 +269,17 @@
                 </div>
 
                 <h3 class="h3">
-                  <a href="#" class="card-title">Design and Vreatives</a>
+                  <a href="javascript:void(0)" class="card-title">Design and Creatives</a>
                 </h3>
 
               </div>
             </li>
 
-            <li>
-              <div class="service-card" style="--color: 157, 89%, 44%">
 
-                <div class="card-icon">
-                  <img src="./assets/images/service-icon-6.png" width="30" height="30" loading="lazy"
-                    alt="service icon">
-                </div>
 
-                <h3 class="h3">
-                  <a href="#" class="card-title">Meketing and Communication</a>
-                </h3>
 
-              </div>
-            </li>
 
-            <li>
-              <div class="service-card" style="--color: 52, 98%, 50%">
 
-                <div class="card-icon">
-                  <img src="./assets/images/service-icon-7.png" width="30" height="30" loading="lazy"
-                    alt="service icon">
-                </div>
-
-                <h3 class="h3">
-                  <a href="#" class="card-title">Business Development</a>
-                </h3>
-
-              </div>
-            </li>
-
-            <li>
-              <a href="#" class="link-card" style="--color: 203, 97%, 75%">
-                <span class="span">04 More Service</span>
-
-                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-              </a>
-            </li>
 
           </ul>
 
@@ -319,7 +307,7 @@
             <p class="section-subtitle has-before">Why Choose us</p>
 
             <h2 class="h2 section-title">
-              Specialist in aviding clients of financial <span class="has-before">challenges</span>
+              Specialist in providing clients with design that put them in <span class="has-before">awe</span>
             </h2>
 
             <ul class="feature-list">
@@ -335,7 +323,7 @@
                     <h3 class="h3 card-title">Fast working process</h3>
 
                     <p class="card-text">
-                      At Pixology we specialize in designing, building, shipping and scaling beautifu.
+                      We deliver rapid, iterative solutions to get your product to market faster without compromising quality.
                     </p>
                   </div>
 
@@ -350,10 +338,10 @@
                   </div>
 
                   <div>
-                    <h3 class="h3 card-title">Didicated team</h3>
+                    <h3 class="h3 card-title">Dedicated team</h3>
 
                     <p class="card-text">
-                      At Pixology we specialize in designing, building, shipping and scaling beautifu.
+                      Our team of expert engineers and designers is dedicated to your project's success from day one.
                     </p>
                   </div>
 
@@ -371,7 +359,7 @@
                     <h3 class="h3 card-title">24/7 hours support</h3>
 
                     <p class="card-text">
-                      At Pixology we specialize in designing, building, shipping and scaling beautifu.
+                      We provide round-the-clock support to ensure your business operations never miss a beat.
                     </p>
                   </div>
 
@@ -393,140 +381,7 @@
         - #PROJECT
       -->
 
-      <section class="section project" id="project" aria-label="project">
-        <div class="container">
 
-          <p class="section-subtitle has-before text-center">Projects</p>
-
-          <h2 class="h2 section-title text-center">
-            Pixology complete <span class="has-before">project</span>
-          </h2>
-
-          <ul class="filter-list">
-
-            <li>
-              <button class="filter-btn active" data-filter-btn>Website</button>
-            </li>
-
-            <li>
-              <button class="filter-btn" data-filter-btn>Landing Page</button>
-            </li>
-
-            <li>
-              <button class="filter-btn" data-filter-btn>iOS App</button>
-            </li>
-
-            <li>
-              <button class="filter-btn" data-filter-btn>Landing Page</button>
-            </li>
-
-            <li>
-              <button class="filter-btn" data-filter-btn>Branding Design</button>
-            </li>
-
-          </ul>
-
-          <ul class="grid-list">
-
-            <li>
-              <div class="project-card">
-
-                <figure class="card-banner img-holder" style="--width: 835; --height: 429;">
-                  <img src="./assets/images/project-1.jpg" width="835" height="429" loading="lazy" alt="Book art design"
-                    class="img-cover">
-                </figure>
-
-                <div class="card-content">
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Book art design</a>
-                  </h3>
-
-                  <a href="#" class="card-tag">Branding</a>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="project-card">
-
-                <figure class="card-banner img-holder" style="--width: 416; --height: 429;">
-                  <img src="./assets/images/project-2.jpg" width="416" height="429" loading="lazy" alt="Graphic Design"
-                    class="img-cover">
-                </figure>
-
-                <div class="card-content">
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Graphic Design</a>
-                  </h3>
-
-                  <a href="#" class="card-tag">Design</a>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="project-card">
-
-                <figure class="card-banner img-holder" style="--width: 416; --height: 429;">
-                  <img src="./assets/images/project-3.jpg" width="416" height="429" loading="lazy" alt="3d Digital Art"
-                    class="img-cover">
-                </figure>
-
-                <div class="card-content">
-                  <h3 class="h3">
-                    <a href="#" class="card-title">3d Digital Art</a>
-                  </h3>
-
-                  <a href="#" class="card-tag">Design</a>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="project-card">
-
-                <figure class="card-banner img-holder" style="--width: 416; --height: 429;">
-                  <img src="./assets/images/project-4.jpg" width="416" height="429" loading="lazy" alt="Web Design"
-                    class="img-cover">
-                </figure>
-
-                <div class="card-content">
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Web Design</a>
-                  </h3>
-
-                  <a href="#" class="card-tag">Design</a>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="project-card">
-
-                <figure class="card-banner img-holder" style="--width: 416; --height: 429;">
-                  <img src="./assets/images/project-5.jpg" width="416" height="429" loading="lazy"
-                    alt="Mobile App Design" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Mobile App Design</a>
-                  </h3>
-
-                  <a href="#" class="card-tag">Design</a>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
 
 
 
@@ -535,182 +390,6 @@
       <!-- 
         - #NEWSLETTER
       -->
-
-      <section class="section newsletter has-bg-image" aria-label="newsletter"
-        style="background-image: url('./assets/images/newsletter-bg.jpg')">
-        <div class="container">
-
-          <figure class="newsletter-banner">
-            <img src="./assets/images/newsletter-banner.png" width="355" height="356" loading="lazy"
-              alt="newsletter banner" class="w-100">
-          </figure>
-
-          <div class="newsletter-content">
-
-            <p class="section-subtitle has-before">Get every update</p>
-
-            <h2 class="h2 section-title">Subscribe newslater get latest updates and deals</h2>
-
-            <form action="" class="newsletter-form">
-              <input type="email" name="email_address" placeholder="Enter your mail" required class="email-field">
-
-              <button type="submit" class="btn btn-secondary has-before has-after">
-                <span class="span">Subscribe</span>
-
-                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-              </button>
-            </form>
-
-          </div>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #BLOG
-      -->
-
-      <section class="section blog" id="blog" aria-label="blog">
-        <div class="container">
-
-          <p class="section-subtitle text-center has-before">Blog Post</p>
-
-          <h2 class="h2 section-title text-center">
-            Popular <span class="has-before">blog post</span>
-          </h2>
-
-          <ul class="blog-list">
-
-            <li>
-              <div class="blog-card large">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/blog-1.jpg" width="644" height="363" loading="lazy"
-                    alt="Godaddy user flow solution..." class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="wrapper">
-                    <a href="#" class="tag">Development</a>
-
-                    <a href="#" class="publish-date">
-                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="span">July 22, 2022</span>
-                    </a>
-                  </div>
-
-                  <h3>
-                    <a href="#" class="card-title">Godaddy user flow solution...</a>
-                  </h3>
-
-                  <p class="card-text">
-                    At Pixology we specialize in designing, building, shipping and scaling beautifu. At Pixology we
-                    specialize in designing,
-                    building, shipping and scaling beautiful.
-                  </p>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/blog-2.jpg" width="202" height="162" loading="lazy"
-                    alt="Godaddy user flow solution for every individual" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="wrapper">
-                    <a href="#" class="tag">Development</a>
-
-                    <a href="#" class="publish-date">
-                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="span">July 21, 2020</span>
-                    </a>
-                  </div>
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Godaddy user flow solution for every individual</a>
-                  </h3>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/blog-3.png" width="202" height="162" loading="lazy"
-                    alt="Business solution for every individual" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="wrapper">
-                    <a href="#" class="tag">Development</a>
-
-                    <a href="#" class="publish-date">
-                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="span">July 21, 2020</span>
-                    </a>
-                  </div>
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Business solution for every individual</a>
-                  </h3>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/blog-4.png" width="202" height="162" loading="lazy"
-                    alt="How to gain pro experience ar figma update version" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="wrapper">
-                    <a href="#" class="tag">Development</a>
-
-                    <a href="#" class="publish-date">
-                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="span">July 21, 2020</span>
-                    </a>
-                  </div>
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">How to gain pro experience ar figma update version</a>
-                  </h3>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
 
     </article>
   </main>
@@ -730,13 +409,13 @@
 
         <div class="footer-brand">
 
-          <p class="footer-list-title">About Pixology</p>
+          <p class="footer-list-title">About KJR Labs</p>
 
           <p class="footer-text">
-            A new way to make the payments easy, reliable and 100% secure. claritatem itamconse quat. Exerci tationulla
+            Your trusted partner for software development, digital transformation, and innovative tech solutions.
           </p>
 
-          <ul class="social-list">
+          <!-- <ul class="social-list">
 
             <li>
               <a href="#" class="social-link">
@@ -762,21 +441,21 @@
               </a>
             </li>
 
-          </ul>
+          </ul> -->
 
         </div>
 
         <ul class="footer-list">
 
           <li>
-            <p class="footer-list-title">Usefull Links</p>
+            <p class="footer-list-title">Useful Links</p>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Contact us</a>
+            <a href="javascript:void(0)" class="footer-link" data-modal-trigger="contact-modal">Contact us</a>
           </li>
 
-          <li>
+          <!-- <li>
             <a href="#" class="footer-link">How it Works</a>
           </li>
 
@@ -786,15 +465,15 @@
 
           <li>
             <a href="#" class="footer-link">Explore</a>
-          </li>
+          </li> -->
 
           <li>
-            <a href="#" class="footer-link">Terms & Services</a>
+            <a href="javascript:void(0)" class="footer-link" data-modal-trigger="terms-modal">Terms & Services</a>
           </li>
 
         </ul>
 
-        <ul class="footer-list">
+        <!-- <ul class="footer-list">
 
           <li>
             <p class="footer-list-title">Community</p>
@@ -815,14 +494,6 @@
           <li>
             <a href="#" class="footer-link">Blog</a>
           </li>
-
-          <li>
-            <a href="#" class="footer-link">Newsletters</a>
-          </li>
-
-        </ul>
-
-        <ul class="footer-list">
 
           <li>
             <p class="footer-list-title">Instagram post</p>
@@ -924,31 +595,17 @@
             </ul>
           </li>
 
-        </ul>
+        </ul> -->
 
       </div>
 
       <div class="footer-bottom">
 
         <p class="copyright">
-          &copy; 2022 Pixology. All Rights Reserved by codewithsadee
+          &copy; 2025 KJR Labs. All Rights Reserved
         </p>
 
-        <ul class="footer-bottom-list">
 
-          <li>
-            <a href="#" class="footer-bottom-link">Terms and conditions</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-bottom-link">Privacy policy</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-bottom-link">Login / Signup</a>
-          </li>
-
-        </ul>
 
       </div>
 
@@ -968,13 +625,125 @@
   </a>
 
 
+  <!-- 
+    - #MODAL - CONTACT
+  -->
+  <div class="modal" id="contact-modal">
+    <div class="modal-content contact-modal-content">
+      <button class="modal-close-btn" data-modal-close aria-label="Close Modal">
+        <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+      </button>
+      
+      <div class="modal-left">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="modal-left-content">
+          <h2 class="h2 section-title" style="color: var(--white);">Get in Touch</h2>
+          <p style="color: var(--white); margin-top: 10px;">We'd love to hear from you. Fill out the form and we'll get back to you shortly.</p>
+        </div>
+      </div>
 
+      <div class="modal-right">
+        <h2 class="h2 section-title text-center" style="color: var(--white); margin-bottom: 30px;">Let's Talk</h2>
 
+        <form action="https://formsubmit.co/kjrlabs9@gmail.com" method="POST" class="contact-form">
+          <!-- FormSubmit Configuration -->
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_subject" value="New submission from KJR Labs Website">
+          
+          <div class="input-wrapper">
+            <input type="text" name="name" placeholder="Name" required class="email-field" style="background-color: var(--white); color: var(--raisin-black-1);">
+            <input type="email" name="email" placeholder="Email Address" required class="email-field" style="background-color: var(--white); color: var(--raisin-black-1);">
+          </div>
+          <input type="text" name="subject" placeholder="Subject" required class="email-field" style="background-color: var(--white); color: var(--raisin-black-1);">
+          <textarea name="message" placeholder="Message" required class="email-field message-field" style="background-color: var(--white); color: var(--raisin-black-1);"></textarea>
+
+          <button type="submit" class="btn btn-primary has-before has-after" style="width: 100%; justify-content: center;">
+            <span class="span">Send Message</span>
+            <ion-icon name="paper-plane-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
 
   <!-- 
-    - custom js link
+    - #MODAL - TERMS
   -->
-  <script src="./assets/js/script.js" defer></script>
+  <div class="modal" id="terms-modal">
+    <div class="modal-content terms-modal-content">
+      <button class="modal-close-btn" data-modal-close aria-label="Close Modal">
+        <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+      </button>
+      
+      <div class="modal-left">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="modal-left-content">
+          <h2 class="h2 section-title" style="color: var(--white);">Legal Info</h2>
+          <p style="color: var(--white); margin-top: 10px;">Please read our terms and conditions carefully before using our services.</p>
+        </div>
+      </div>
+
+      <div class="modal-right">
+        <h2 class="h2 section-title text-center" style="color: var(--white); margin-bottom: 30px;">Terms & Services</h2>
+        
+        <div class="terms-content" style="color: var(--white); max-height: 400px; overflow-y: auto; padding-right: 10px;">
+          <h3 class="h3" style="color: var(--white); margin-bottom: 10px;">1. Introduction</h3>
+          <p style="margin-bottom: 20px;">Welcome to KJR Labs. By accessing our website, you agree to be bound by these Terms and Services.</p>
+          
+          <h3 class="h3" style="color: var(--white); margin-bottom: 10px;">2. Services</h3>
+          <p style="margin-bottom: 20px;">We provide software development and design services. All projects are subject to a separate agreement.</p>
+          
+          <h3 class="h3" style="color: var(--white); margin-bottom: 10px;">3. Intellectual Property</h3>
+          <p style="margin-bottom: 20px;">All content on this website is the property of KJR Labs.</p>
+          
+          <h3 class="h3" style="color: var(--white); margin-bottom: 10px;">4. Privacy</h3>
+          <p style="margin-bottom: 20px;">We respect your privacy. Any information submitted via our contact form is used solely for communication purposes.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <script>
+    const openBtns = document.querySelectorAll('[data-modal-trigger]');
+    const closeBtns = document.querySelectorAll('[data-modal-close]');
+    const modals = document.querySelectorAll('.modal');
+
+    openBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const modalId = btn.getAttribute('data-modal-trigger');
+        const modal = document.getElementById(modalId);
+        if (modal) {
+          modal.classList.add('active');
+          document.body.style.overflow = 'hidden';
+        }
+      });
+    });
+
+    const closeModal = (modal) => {
+      modal.classList.remove('active');
+      document.body.style.overflow = '';
+    };
+
+    closeBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const modal = btn.closest('.modal');
+        closeModal(modal);
+      });
+    });
+
+    // Close on clicking outside
+    window.addEventListener('click', (e) => {
+      if (e.target.classList.contains('modal')) {
+        closeModal(e.target);
+      }
+    });
+  </script>
 
   <!-- 
     - ionicon link

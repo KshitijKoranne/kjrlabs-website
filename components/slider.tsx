@@ -1,4 +1,4 @@
-import { ReactNode, useCallback, useContext, useRef } from "react";
+import { ReactNode, useCallback, useContext, useRef, useState } from "react";
 import { SizeContext } from "../utils/size-observer";
 import useAnimationFrame from "../utils/use-animation-frame";
 
@@ -14,11 +14,12 @@ const SliderContainer: React.FC<Props> = ({ initialOffsetX, className, contentWi
   const refScrollX = useRef<number>(initialOffsetX) 
   const refContainer = useRef<HTMLDivElement>(null)
   const refContent = useRef<HTMLDivElement>(null)
+  const [isPaused, setIsPaused] = useState(false)
 
   const enabled = innerWidth < contentWidth
 
   useAnimationFrame(
-    enabled, 
+    enabled && !isPaused, 
     useCallback(() => {
       const { current: elContainer } = refContainer
       const { current: elContent } = refContent
@@ -36,7 +37,12 @@ const SliderContainer: React.FC<Props> = ({ initialOffsetX, className, contentWi
   )
 
   return (
-    <div ref={refContainer} className={`slider-container overflow-x-hidden whitespace-nowrap max-w-full pointer-events-none ${className}`}>
+    <div 
+      ref={refContainer} 
+      className={`slider-container overflow-x-hidden whitespace-nowrap max-w-full ${className}`}
+      onMouseEnter={() => setIsPaused(true)}
+      onMouseLeave={() => setIsPaused(false)}
+    >
       <div ref={refContent} className="inline-block">
         {children}
       </div>

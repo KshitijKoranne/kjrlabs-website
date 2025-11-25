@@ -42,16 +42,17 @@ const Masthead: React.FC = () => {
         }`}
       >
         <Image
-          src="/assets/logo.svg"
+          src="/assets/letter-k.png"
           alt="logo type"
-          width={128 / 3}
-          height={114 / 3}
+          width={51}
+          height={46}
+          className="invert"
         />
       </div>
       <div className="p-12 font-bold z-10 text-white drop-shadow-[0_5px_3px_rgba(0,0,0,0.4)] text-center flex-1 flex items-center justify-center flex-col">
-        <h1 className="mb-6 text-4xl xl:text-5xl">Margelo</h1>
+        <h1 className="mb-6 text-4xl xl:text-5xl" style={{ fontFamily: 'cursive' }}>KJR Labs</h1>
         <h2 className="mb-2 text-2xl xl:text-3xl tracking-tight">
-          <span>App Development,</span> <span>done right.</span>
+          <span>Web Development,</span> <span>done right.</span>
         </h2>
       </div>
       <div

@@ -9,8 +9,7 @@ const TrustedBy: React.FC = () => {
       <div className="flex-1"></div>
       <div className="flex flex-col justify-center items-center">
         <h3 className="text-xl mb-10 font-bold text-center">
-          <span className="whitespace-nowrap">trusted by</span>{' '}
-          <span className="whitespace-nowrap">the apps on your phone</span>
+          <span className="whitespace-nowrap">Technologies We Use</span>
         </h3>
         <ClientLogos />
       </div>
@@ -20,7 +19,7 @@ const TrustedBy: React.FC = () => {
             We believe in good communication and a fully transparent development process.</h3>
         </div>
       </div>
-      <Testimonials />
+      {/* <Testimonials /> */}
       <div className="flex-1 bg-black"></div>
     </section>
   )

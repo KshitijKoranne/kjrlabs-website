@@ -46,8 +46,7 @@ const Skills: React.FC = () => {
               opacity: opacityForBlock(progress, 1),
             }}
           >
-            Out team has contributed 123 commits to React Native core, powering
-            thousands of apps.
+            We&apos;re a small but dedicated team focused on delivering quality work and building long-term relationships with our clients.
           </span>
           <span
             className={`${s.skillText} inline-block`}
@@ -55,8 +54,7 @@ const Skills: React.FC = () => {
               opacity: opacityForBlock(progress, 2),
             }}
           >
-            W&apos;re maintaning some of the most populer open-source projects,
-            with over <strong>1,234</strong> downloads.
+            We use modern, proven technologies to build reliable websites and apps that help your business grow.
           </span>
         </div>
       </div>
